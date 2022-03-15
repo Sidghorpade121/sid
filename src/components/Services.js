@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { FaCocktail,FaCreativeCommons, FaHiking, FaShuttleVan, FaBeer } from "react-icons/fa";
 import Title from "./Title";
 import { WiDayCloudy } from "react-icons/wi";
+import { BsWifi } from "react-icons/bs";
 
 export default class Services extends Component {
   state = {
@@ -9,26 +10,23 @@ export default class Services extends Component {
       {
         icon: <FaCocktail />,
         title: "Free Cocktails",
-        info:
-          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias molestias eius libero?"
+      //   info:
+      // "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias molestias eius libero?"
       },
       {
-        icon: <FaCreativeCommons />,
+        icon: <BsWifi />,
         title: "Free Wifi Sevice",
-        info:
-          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias molestias eius libero?"
+        
       },
       {
         icon: <FaShuttleVan />,
         title: "Free Cab Service",
-        info:
-          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias molestias eius libero?"
+       
       },
       {
         icon: <WiDayCloudy />,
         title: "Weather",
-        info:
-          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias molestias eius libero?"
+      
       }
     ]
   };
@@ -43,10 +41,19 @@ export default class Services extends Component {
                 <span>{item.icon}</span>
                 <h6>{item.title}</h6>
                 <p>{item.info}</p>
+                
               </article>
+              
             );
           })}
+          
         </div>
+        
+                <br/><br/> <br/><br/><br/><br/>
+                <hr/>
+        <p align="bottom">
+    Copyright © 2012 Indian Hotel. All rights reserved. 
+    </p>
       </section>
     );
   }

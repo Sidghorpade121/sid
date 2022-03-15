@@ -13,10 +13,11 @@ import Footer from "./components/footer";
 import Banner from "./components/Banner";
 import Services from "./components/Services";
 import Menu from "./components/Menu";
+import Navbar from "./components/Navbar";
 function App() {
   return (
     <>
-    <Banner>
+    
     <Menu/>
     <BrowserRouter>
     <Routes>
@@ -32,7 +33,7 @@ function App() {
       </Route>
     </Routes>
   </BrowserRouter>
-  </Banner>
+  
 <Services />
   </>
   );
